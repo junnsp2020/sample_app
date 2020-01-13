@@ -8,5 +8,8 @@ Rails.application.routes.draw do
 
     get "todaylists/:id"=> "todaylists#show", as:"todolist"
     #.../todolists/1や.../todolists/3に該当する
+    
+    get "todolists/:id/edit"=> "todolists#edit", as: "edit_todolist"
+
 end
 
